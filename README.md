@@ -5,23 +5,26 @@ iam learned foundry an Deploy & Test smart contract throuh many networks .
 
 --------------------------------------
 
-//Basic::
+//Basic:
 //Install..
 -  curl -L https://foundry.paradigm.xyz | bash
 -  foundryup
 
 -------------------------------
- //Init..
+ //Init
  - forge init
 
 -------------------------------
- //Basic commands :  uint , integratation ,  mocks
+ //Testing :  uint , integratation ,  mocks , staging
  
 -  forge build
 -  forge test
 -  forge test --match-path test/HelloWorld -vvvv
 -  forge test --match-test testFundUpdatesFundedDataStructure
 -  forge test --fork-url $MAINNET_RPC_URL
+--------------------------
+//Deploy
+
 -  forge script  script/Counter.s.sol
 -  forge script  script/Counter.s.sol --rpc-url $SEPOLIA_RPC_URL   --private-key  $PRIVATE_KEY
 -  forge test -vvvv
