@@ -27,6 +27,7 @@ forge test -vvvv
 
 forge coverage
 forge coverage --fork-url $SEPOLIA_RPC_URL
+foge snapshot
 
 
 ------------
